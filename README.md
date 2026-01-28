@@ -146,7 +146,7 @@ Al igual que con el ejercicio rectangular, el análisis comenzó en papel. Al di
 Identifiqué que al colocar una fila de paneles a una altura determinada, el espacio restante hacia arriba sigue siendo un triángulo semejante al original.
 
 Utilicé esta **semejanza de triángulos** para determinar cuánto ancho queda disponible a cualquier altura $y$. La fórmula es:
-$$Ancho\_disponible = \frac{Ancho\_techo \times (Altura\_techo- y)}{Altura\_techo}$$
+$$Ancho\_{disponible} = \frac{Ancho\_{techo} \times (Altura\_{techo}- y)}{Altura\_{techo}}$$
 
 Esta fórmula asegura que, sin importar a qué altura estemos, siempre sabremos con precisión cuántos paneles caben de forma horizontal antes de chocar con los bordes del techo.
 
@@ -159,4 +159,5 @@ Debido a que el ancho cambia en cada nivel, una simple solución como no rotar l
 2.  **Ramificación (Decisión):**
     * **Opción A:** Colocar la fila actual con orientación normal (`width x height`), sumar los paneles que caben y llamar recursivamente a la función para el triángulo restante superior..
     * **Opción B:** Colocar la fila actual con orientación rotada (`height x width`), sumar los paneles y llamar recursivamente a la función para el espacio restante.
+
 3.  **Resultado:** La función compara ambos caminos y retorna el valor máximo encontrado.
